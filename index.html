@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaim Nigeria Enterprises</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f4e5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        header {
+            background: url('https://images.unsplash.com/photo-1581091012184-5c16b99f0f93?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Section Container */
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+            animation: fadeInUp 0.8s ease both;
+        }
+
+        section h2 {
+            color: #b30000;
+            text-align: center;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #ffcc00;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        /* Services & Why Choose Us */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #b30000;
+            margin-bottom: 10px;
+        }
+
+        /* Contact */
+        .contact-info {
+            text-align: center;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            margin: 8px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffcc00;
+            padding: 15px;
+            text-align: center;
+            color: #333;
+            font-size: 0.9em;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            animation: pulse 1.5s infinite;
+            z-index: 1000;
+        }
+
+        .whatsapp-button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2em; }
+            header p { font-size: 1em; }
+        }
+
+        @media (max-width: 480px) {
+            header { padding: 50px 15px; }
+            header h1 { font-size: 1.8em; }
+            header p { font-size: 0.95em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shaim Nigeria Enterprises</h1>
+        <p>Your Trusted Partner in Caterpillar Solutions</p>
+    </header>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Shaim Nigeria Enterprises is a trusted name in the supply of Caterpillar spare parts, heavy machinery, and engineering services. With years of expertise, we ensure that industries and contractors have access to high-quality equipment and reliable after-sales support.</p>
+    </section>
+
+    <section>
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Caterpillar Spare Parts</h3>
+                <p>We provide genuine Caterpillar spare parts to ensure maximum performance and durability of your equipment.</p>
+            </div>
+            <div class="card">
+                <h3>Earth Moving Equipment</h3>
+                <p>Supplying reliable and powerful machinery for construction, mining, and industrial applications.</p>
+            </div>
+            <div class="card">
+                <h3>CAT Generator & Marine Parts</h3>
+                <p>High-quality generator and marine engine parts for consistent and efficient performance.</p>
+            </div>
+            <div class="card">
+                <h3>General Contracting</h3>
+                <p>Handling engineering and construction projects with professionalism and efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Why Choose Us</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>✅ Quality Products</h3>
+                <p>All our products are sourced from reputable manufacturers and meet strict quality standards.</p>
+            </div>
+            <div class="card">
+                <h3>🚚 Fast Delivery</h3>
+                <p>Our logistics network ensures prompt delivery of parts and equipment nationwide.</p>
+            </div>
+            <div class="card">
+                <h3>💼 Professional Service</h3>
+                <p>Our skilled team offers expert guidance and outstanding customer support.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>📞 08126342017 | 08170964529</p>
+            <p>📍 791 Lagos Abe Expressway, Beside Mobil Filling Station, Adura Alagbanda, Lagos, Nigeria</p>
+            <p>✉️ info@shaimnigeria.com</p>
+            <p><strong>Business Hours:</strong> Mon – Sat: 8:00 AM – 6:00 PM</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shaim Nigeria Enterprises. All Rights Reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2348126342017?text=Hello%20Shaim%20Nigeria%20Enterprises%2C%20I%20am%20interested%20in%20your%20services" 
+       class="whatsapp-button" target="_blank" title="Chat with us on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+</body>
+  </html>
