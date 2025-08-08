@@ -10,64 +10,97 @@
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
-    .fade-up {
-      animation: fadeInUp 1s ease-out forwards;
-    }
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-    .fade {
-      animation: fadeIn 1.5s ease-in forwards;
-    }
+    .fade-up { animation: fadeInUp 1s ease-out forwards; }
+    @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+    .fade { animation: fadeIn 1.5s ease-in forwards; }
   </style>
 </head>
 <body class="bg-yellow-400 text-black font-sans">
 
   <!-- Header -->
-  <header class="bg-yellow-500 p-6 text-center fade-up">
+  <header class="bg-yellow-500 p-6 text-center fade-up shadow-lg">
     <h1 class="text-4xl font-bold text-red-700">Shalim Nigeria Enterprises</h1>
-    <p class="text-lg">Your Trusted Partner in Caterpillar Solutions</p>
+    <p class="text-lg italic">Your Trusted Partner in Caterpillar Solutions</p>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="relative fade">
     <img src="https://images.unsplash.com/photo-1581091014534-204f4f3b4dba" 
          alt="Caterpillar Machinery" 
          class="w-full h-72 object-cover">
-    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <h2 class="text-white text-3xl md:text-4xl font-bold animate-bounce">
-        Quality Parts, Reliable Service
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center px-4 text-center">
+      <h2 class="text-white text-3xl md:text-4xl font-bold animate-bounce leading-snug">
+        High-Quality Parts • Expert Service • Reliable Delivery
       </h2>
     </div>
   </section>
 
+  <!-- Mission -->
+  <section class="p-6 text-center fade-up">
+    <h2 class="text-2xl font-bold text-red-700 mb-4">Our Mission</h2>
+    <p class="max-w-3xl mx-auto">
+      At Shalim Nigeria Enterprises, our mission is simple: to keep your Caterpillar equipment running at peak performance. 
+      We are committed to supplying durable spare parts, delivering exceptional repair services, and offering expert 
+      technical advice that helps our customers minimize downtime and maximize productivity.
+    </p>
+  </section>
+
   <!-- Services -->
   <section class="p-6 text-center fade-up">
-    <h2 class="text-2xl font-bold text-red-700 mb-4">Our Services</h2>
-    <ul class="space-y-3">
-      <li class="text-black hover:text-red-700 transition duration-300 cursor-pointer">Deals in All Kinds of Caterpillar Spare Parts</li>
-      <li class="text-black hover:text-red-700 transition duration-300 cursor-pointer">Earth Moving Equipment</li>
-      <li class="text-black hover:text-red-700 transition duration-300 cursor-pointer">CAT Generator & Marine Spare Parts</li>
-      <li class="text-black hover:text-red-700 transition duration-300 cursor-pointer">General Contracting</li>
+    <h2 class="text-2xl font-bold text-red-700 mb-6">Our Services</h2>
+    <div class="grid gap-6 md:grid-cols-2 max-w-5xl mx-auto">
+      <div class="bg-yellow-300 p-5 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-red-700 mb-2">Caterpillar Spare Parts</h3>
+        <p>We stock a wide range of genuine and high-quality aftermarket Caterpillar parts for all types of heavy machinery. 
+        From engines to hydraulic components, we ensure every part is built to last.</p>
+      </div>
+      <div class="bg-yellow-300 p-5 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-red-700 mb-2">Earth Moving Equipment</h3>
+        <p>We supply and service heavy-duty earth-moving machines that can handle even the toughest construction and mining projects.</p>
+      </div>
+      <div class="bg-yellow-300 p-5 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-red-700 mb-2">CAT Generators & Marine Parts</h3>
+        <p>We provide reliable CAT generator parts and marine engine spares designed to keep your operations running smoothly on land and at sea.</p>
+      </div>
+      <div class="bg-yellow-300 p-5 rounded-lg shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-red-700 mb-2">General Contracting</h3>
+        <p>From procurement to installation, we manage projects with precision, ensuring you get the right solutions on time and within budget.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="p-6 bg-yellow-300 text-center fade-up">
+    <h2 class="text-2xl font-bold text-red-700 mb-4">Why Choose Shalim?</h2>
+    <ul class="max-w-3xl mx-auto space-y-3">
+      <li>✅ Over 15 years of industry experience</li>
+      <li>✅ Trusted supplier of genuine Caterpillar parts</li>
+      <li>✅ Competitive prices without compromising quality</li>
+      <li>✅ Quick delivery across Nigeria and beyond</li>
+      <li>✅ Dedicated after-sales support</li>
     </ul>
   </section>
 
-  <!-- About -->
-  <section class="p-6 bg-yellow-300 text-center fade-up">
-    <h2 class="text-2xl font-bold text-red-700 mb-4">About Us</h2>
-    <p class="max-w-2xl mx-auto">
-      At Shalim Nigeria Enterprises, we specialize in providing high-quality Caterpillar spare parts,
-      earth-moving equipment, and marine engine components. With years of experience, we deliver
-      reliable solutions to keep your operations running efficiently.
-    </p>
+  <!-- Testimonials -->
+  <section class="p-6 text-center fade-up">
+    <h2 class="text-2xl font-bold text-red-700 mb-4">What Our Clients Say</h2>
+    <div class="grid gap-6 md:grid-cols-2 max-w-5xl mx-auto">
+      <blockquote class="bg-white p-5 rounded-lg shadow">
+        <p>"Shalim provided us with quality parts that lasted far longer than what we got elsewhere. Highly recommend!"</p>
+        <footer class="mt-2 text-sm text-gray-700">— Adewale, Construction Manager</footer>
+      </blockquote>
+      <blockquote class="bg-white p-5 rounded-lg shadow">
+        <p>"Fast delivery, honest pricing, and excellent customer service. Will definitely use them again."</p>
+        <footer class="mt-2 text-sm text-gray-700">— Chinyere, Marine Engineer</footer>
+      </blockquote>
+    </div>
   </section>
 
   <!-- Contact -->
   <section class="p-6 text-center fade-up">
     <h2 class="text-2xl font-bold text-red-700 mb-4">Contact Us</h2>
-    <p class="text-black">📞 08126342017 | 08170964529</p>
-    <p class="text-black mb-4">📍 791 Lagos Abe Expressway, Beside Mobil Filling Station, Adura Alagbado, Lagos, Nigeria</p>
+    <p class="text-black mb-1">📞 08126342017 | 08170964529</p>
+    <p class="text-black mb-4">📍 791 Lagos Abeokuta Expressway, Beside Mobil Filling Station, Adura Alagbado, Lagos, Nigeria</p>
     <a href="tel:08126342017" 
        class="bg-red-600 text-white px-6 py-2 rounded-lg shadow-lg hover:bg-red-700 transform hover:scale-105 transition duration-300 inline-block">
        Call Now
@@ -80,4 +113,4 @@
   </footer>
 
 </body>
-    </html>
+  </html>
